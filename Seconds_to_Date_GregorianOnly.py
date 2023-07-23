@@ -1,9 +1,9 @@
-# Input Seconds Here
-seconds = int(6.38600315*(10**10))
+## Input Seconds Here
+seconds = int(1*(10**15))
 print(f'# of Seconds = {seconds:,}')
 print('')
 
-# Outputs of Hours, Minutes, Seconds
+## Outputs of Hours, Minutes, Seconds
     # 1) Millennium: 10 centuries in a millennium = 31,556,952,000 (on average, removing leap seconds)
 millennium = seconds // 31556952000 # seconds to millennia conversion
 millennium_plus_one = millennium + 1 # convention: year 1 A.D. = 1st millennium
@@ -32,7 +32,7 @@ minutes = mod_hours // 60 # minutes in remainder_5
     # 7) Seconds
 mod_minutes = mod_hours % 60 # remainder_6 of seconds leftover at end of conversion
 
-# Converting to Strings with Relevant # of Digits
+## Converting to Strings with Relevant # of Digits
 str_millennium = str(millennium)
 str_millennium_plus_one = str(millennium_plus_one)
 str_centuries = str(centuries)
@@ -43,7 +43,7 @@ str_hours = str(hours).zfill(2)
 str_minutes = str(minutes).zfill(2)
 str_seconds = str(mod_minutes).zfill(2)
 
-# Printing Outputs
+## Printing Outputs as Strings
 print('In # of Seconds:')
 print(f'''Millennium = {str_millennium_plus_one}
 Century = {str_centuries_plus_one}
