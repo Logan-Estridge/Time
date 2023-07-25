@@ -1,5 +1,5 @@
 
-t = int(input('''Enter current military time (hours only, e.g. 5:00 PM == 17): '''))
+t = int(input('Enter current military time (hours only, e.g. 5:00 PM == 17): '))
 n = int(input('Enter number of hours to wait: '))
 print('')
 
